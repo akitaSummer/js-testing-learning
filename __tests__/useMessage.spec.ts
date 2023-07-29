@@ -16,8 +16,8 @@ vi.mock("antd", async () => {
   };
 });
 
-describe("useName", () => {
-  it("should fetch nsw", async () => {
+describe("useMessage", () => {
+  it("test module function", async () => {
     const { result } = renderHook(() => useMessage());
 
     result.current.info("This is a normal message");

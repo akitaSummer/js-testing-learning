@@ -15,8 +15,8 @@ vi.mock("lodash", async () => {
   };
 });
 
-describe("useName", () => {
-  it("should fetch nsw", async () => {
+describe("useLodash", () => {
+  it("1 + 2 = 3", async () => {
     const { result } = renderHook(() => useLodash());
 
     result.current.add(1, 2);

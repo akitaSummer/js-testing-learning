@@ -2,8 +2,8 @@ import { expect, it, describe } from "vitest";
 import { renderHook } from "@testing-library/react-hooks";
 import useDefine from "@/hooks/useDefine";
 
-describe("useName", () => {
-  it("should fetch nsw", async () => {
+describe("useDefine", () => {
+  it("test replace env and window", async () => {
     const { result } = renderHook(() => useDefine());
 
     expect(result.current.NODE_ENV).toBe("vitest");
