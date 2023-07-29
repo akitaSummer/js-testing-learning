@@ -1,3 +1,6 @@
 {
-  "deno.enable": false
+  "deno.enable": false,
+  "vitest.nodeEnv": {
+    "NODE_OPTIONS": "--no-experimental-fetch"
+  }
 }

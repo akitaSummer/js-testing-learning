@@ -1,6 +1,6 @@
 import { createMocks } from "node-mocks-http";
 import { NextRequest, NextResponse } from "next/server";
-import { expect, it, describe } from "vitest";
+import { expect, it, describe, beforeEach, afterAll, vi } from "vitest";
 import { GET } from "@/app/api/name/[name]/route";
 
 describe("/api/[name]", () => {
@@ -13,7 +13,6 @@ describe("/api/[name]", () => {
     });
 
     const res = await GET(req, { params: req.params });
-
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual(
       expect.objectContaining({
