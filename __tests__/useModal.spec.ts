@@ -5,7 +5,6 @@ import {
   act,
 } from "@testing-library/react-hooks";
 import useModal from "@/hooks/useModal";
-import React from "react";
 
 describe("useModal", () => {
   it("test zustand", () => {

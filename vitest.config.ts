@@ -6,7 +6,7 @@ export default defineConfig({
   test: {
     silent: true,
     environment: "jsdom",
-    setupFiles: "./__tests__/setupTests.ts",
+    setupFiles: ["./__tests__/setupTests.ts"],
     alias: {
       "@": path.resolve(__dirname, "./"),
     },
